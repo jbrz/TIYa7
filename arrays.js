@@ -1,7 +1,7 @@
 // ---------------------------
 // The Arrays You Will Work With
 // ---------------------------
-var numbers = [1,12,4,18,9,7,11,3,101,5,6];
+var nums = [1,12,4,18,9,7,11,3,101,5,6];
 var strings = ['this','is','a','collection','of','words'];
 var instructors = [
     { firstname : 'JD', teaches : 'JavaScript'},
@@ -20,6 +20,13 @@ var instructors = [
 // 1. Find largest number
 // ---------------------------
 
+var largest = 0
+for (i=0; i<=largest;i++){
+    if (nums[i]>largest) {
+        var largest=nums[i];
+    }
+  console.log(largest);
+}
 
 
 
@@ -27,7 +34,13 @@ var instructors = [
 // 2. Find longest string
 // ---------------------------
 
-
+var longest = ""
+for (i=0; i<=longest.length;i++){
+    if (strings[i.length]>longest) {
+        var longest=strings[i];
+    }
+  console.log(longest.length);
+}
 
 
 // ---------------------------

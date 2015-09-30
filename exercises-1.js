@@ -24,14 +24,18 @@
 // Write a function called `sum` that takes two
 // parameters and returns the sum of those 2 numbers.
 
-
+sum = function(a,b){
+  return a + b;
+}
 
 
 // Q2
 // Write a function named `avg` that takes 3 parameters
 // and returns the average of those 3 numbers.
 
-
+avg = function(a,b,c){
+  return (a+b+c) / 3;
+}
 
 
 // Q3
@@ -39,6 +43,9 @@
 // parameter (a string) and returns the length
 
 
+getLength = function(x){
+  return x.length
+}
 
 
 // Q4
@@ -48,6 +55,13 @@
 // the function should return `false`.
 
 
+greaterThan = function(x,y){
+  if(y>x){
+    return true
+  } else {
+    return false
+  }
+}
 
 
 // Q5
@@ -57,6 +71,9 @@
 // is the parameter that was passed in.
 
 
+greet = function(h){
+  alert("Hello, " + h + "!")
+}
 
 
 // Q6
@@ -71,7 +88,14 @@
 // sentence: "quick brown fox jumps over the fence"
 
 
-
+madlib = function(a,t,j,v) {
+  if((typeof a || t || j || v) === "string"){
+    return("The " + a + " loris tumbled to his " + t + " demise in the pit of "+ j +" and "+ v +".")
+  } 
+  else {
+    alert("hey idiot, use words.  preferably an adjective, adverb, and two nouns!")
+  }
+}
 
 ///////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////
