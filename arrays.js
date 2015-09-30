@@ -36,10 +36,10 @@ for (i=0; i<=largest;i++){
 
 var longest = ""
 for (i=0; i<=longest.length;i++){
-    if (strings[i.length]>longest) {
+    if (strings[i.length]>longest.length) {
         var longest=strings[i];
     }
-  console.log(longest.length);
+  console.log(longest);
 }
 
 
@@ -47,7 +47,9 @@ for (i=0; i<=longest.length;i++){
 // 3. Find even numbers
 // ---------------------------
 
-
+nums.foreach(function(nums){
+  if(nums % 2 = 0){console.log(nums)}
+})
 
 // ---------------------------
 // 4. Find odd numbers
