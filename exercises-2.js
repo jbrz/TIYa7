@@ -66,6 +66,11 @@ function isVowel(char){
 // Write a function translate() that will translate a text into "rÃ¶varsprÃ¥ket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
 // ---------------------
 
+
+/* what in the actual fffffffff - I spent too much time on arrays, 
+didn't have time to figure this out.  As JD said - I think I know how to solve this 'in the real world'
+but I can't figure out how to translate (irony) that to code */
+
 function translate(x){
   trans = x.split("")
   trans.foreach()
@@ -90,7 +95,7 @@ function reverse(x){
 function findLongestWord(array) {
   return array.reduce(function (long1, long2) {
     return long2.length > long1.length ? long2 : long1;
-  }, Number.MIN_VALUE);
+  }, 0);
 }
 
 // ---------------------
@@ -110,14 +115,16 @@ function filterLongWords(array,i) {
 // ---------------------
 
 
+//Real answer below, fake answer not provided:
+
 function charFreq(string) {
     var freq = {};
     for (var i=0; i<string.length;i++) {
-        var character = string.charAt(i);
-        if (freq[character]) {
-           freq[character]++;
+        var letter = string.charAt(i);
+        if (freq[letter]) {
+           freq[letter]++;
         } else {
-           freq[character] = 1;
+           freq[letter] = 1;
         }
     }
 
