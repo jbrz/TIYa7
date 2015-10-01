@@ -20,7 +20,7 @@ var instructors = [
 // 1. Find largest number
 // ---------------------------
 
-var largest = 0
+var largest = Number.MIN_VALUE;
 for (i=0; i<=largest;i++){
     if (nums[i]>largest) {
         var largest=nums[i];
@@ -34,21 +34,36 @@ for (i=0; i<=largest;i++){
 // 2. Find longest string
 // ---------------------------
 
-var longest = ""
-for (i=0; i<=longest.length;i++){
-    if (strings[i.length]>longest.length) {
-        var longest=strings[i];
-    }
-  console.log(longest);
+var words = ["kids","are","dumb","but","so","are","we"]
+
+function findLongest(array){
+ var lengths = []
+ array.forEach(i){
+   lengths.push(i.length);
+ });
 }
+findLongest(words);
+
+/* The way real people do it.  GRRRR */
+// var longest = ""
+// for (i=0; i<=longest.length;i++){
+//     if (strings[i.length]>longest.length) {
+//         var longest=strings[i];
+//     }
+//   console.log(longest);
+// }
 
 
 // ---------------------------
 // 3. Find even numbers
 // ---------------------------
 
-nums.foreach(function(nums){
-  if(nums % 2 = 0){console.log(nums)}
+var numbers = 
+numbers.foreach(function(numbers){
+  var evens = [];
+  if(numbers % 2){
+    evens.push()
+  }
 })
 
 // ---------------------------

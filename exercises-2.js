@@ -85,22 +85,25 @@ function reverse(x){
 // ---------------------
 // Write a function findLongestWord() that takes an array of words and returns the length of the longest one.
 // ---------------------
-filter
 
-function findLongestWord(words){
-  x = words.split(",")
-  x[i].length
+
+function findLongestWord(array) {
+  return array.reduce(function (long1, long2) {
+    return long2.length > long1.length ? long2 : long1;
+  }, Number.MIN_VALUE);
 }
 
 // ---------------------
 // Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
 // ---------------------
-filter
 
-string = "Hi my name is bob"
-function filterLongWords(words, i){
-  words.split(" ").foreach(x, if())
+
+function filterLongWords(array,i) {
+  array.filter(function(words,i){
+  return words.length > i
+});  
 }
+
 
 // ---------------------
 // Write a function charFreq() that takes a string and builds a frequency listing of the characters contained in it. Represent the frequency listing as a Javascript object. Try it with something like charFreq("abbabcbdbabdbdbabababcbcbab").
