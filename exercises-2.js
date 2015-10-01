@@ -95,7 +95,7 @@ function reverse(x){
 function findLongestWord(array) {
   return array.reduce(function (long1, long2) {
     return long2.length > long1.length ? long2 : long1;
-  }, 0);
+  }, '');
 }
 
 // ---------------------
